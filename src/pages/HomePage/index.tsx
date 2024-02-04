@@ -31,17 +31,19 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <HomeTemplate
-      form={<AddEventForm onFinish={handleSubmit} />}
-      list={
-        <EventList
-          data={todoList}
-          onDeleteTask={handleDeleteTask}
-          onEditTask={handleEditTask}
-          onChangeStatus={handleChangeStatus}
-        />
-      }
-    />
+    <section>
+      <HomeTemplate
+        form={<AddEventForm onFinish={handleSubmit} />}
+        list={
+          <EventList
+            data={todoList}
+            onDeleteTask={handleDeleteTask}
+            onEditTask={handleEditTask}
+            onChangeStatus={handleChangeStatus}
+          />
+        }
+      />
+    </section>
   );
 };
 

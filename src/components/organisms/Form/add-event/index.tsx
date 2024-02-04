@@ -17,7 +17,7 @@ const AddEventForm: React.FC<IAddEventProps> = ({ onFinish }) => {
 
   return (
     <>
-      <Form form={form} name="basic" onFinish={handleFinish} autoComplete="off" style={{ width: 400 }}>
+      <Form form={form} name="basic" onFinish={handleFinish} autoComplete="off" style={{ width: 380 }}>
         <Row justify="space-between">
           <Col span={18}>
             <Form.Item name="value" rules={[{ required: true, message: 'Please input your task!' }]}>

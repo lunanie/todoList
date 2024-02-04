@@ -8,6 +8,7 @@ export const HomeTemplate: React.FC<IHomeTemplateProps> = ({ form, list }) => {
   return (
     <>
       <Container>
+        <p>Enter your to-dos and click '+' to add them.</p>
         <Row>
           <Col>{form}</Col>
         </Row>
